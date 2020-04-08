@@ -217,6 +217,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin-bottom: 40px;
 }
 
+.icon-link a{
+  text-decoration: none;
+  color: lightgray;  
+}
+
 .my-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

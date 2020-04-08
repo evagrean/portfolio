@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 /*
 Colors used
 
@@ -244,6 +242,11 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .introduction-text {
   margin-bottom: 40px;
+}
+
+.icon-link a{
+  text-decoration: none;
+  color: lightgray;  
 }
 
 .my-skills {
