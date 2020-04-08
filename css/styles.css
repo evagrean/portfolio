@@ -47,8 +47,15 @@ body {
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-body);
   font-size: var(--font-size-body);
+  height: 100%;
   line-height: 1.6;
   background-color: var(--color-background-body);
+}
+
+.index.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, thead {
@@ -139,8 +146,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   top: 0;
 }
 
-
-
 .page-header__item {
   flex: 0 1 200px;
   font-family: sans-serif;
@@ -166,6 +171,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   flex-direction: column;
   text-align: center;
   width: 100%;
+  align-self: flex-end;
   background-color: var(--color-background-body)
 }
 
@@ -207,10 +213,8 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin: 120px 10px 20px 20px;
 }
 
-svg {
-  display: block;
-  margin: 30px auto;
-  width: 70%;
+.introduction-text {
+  margin-bottom: 40px;
 }
 
 .my-skills {
@@ -229,8 +233,6 @@ svg {
   width: auto;
   font-size: 14px;
 }
-
-
 
 /* work.html styles */
 
@@ -275,36 +277,6 @@ svg {
   margin-top: 120px;
 }
 
-form {
-  margin: auto;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: 10px 0px;
-}
-
-#send-massage {
-  margin: 10px 0px;
-  width: 120px;
-  border: none;
-  font-family: var(--font-family-body);
-  background-color: var(--primary-color);
-  color: var(--color-button-text);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  text-align: left;
-}
-
-#send-massage:hover, #send-massage:focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
 @media all and (max-width: 500px) {
   .project-list {
     grid-template-columns: 1fr;
@@ -347,8 +319,6 @@ label {
     grid-gap: 10px;
   }
 }
-
-
 
 @keyframes color-change {
   0% {
